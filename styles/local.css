@@ -1,7 +1,7 @@
 i {
     margin: 8px;
 }
-/* Colors set by Client */
+/* Colors Overrides for Client Palatte */
 .w3-midnight, .w3-hover-midnight:hover {
     color: #BDBDBD!important;
     background-color: #003B6D!important;
