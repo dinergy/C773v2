@@ -1,1 +1,23 @@
+i {
+    margin: 8px;
+}
+/* Colors set by Client */
+.w3-midnight, .w3-hover-midnight:hover {
+    color: #BDBDBD!important;
+    background-color: #003B6D!important;
+}
 
+.w3-bluesky, .w3-hover-bluesky:hover {
+    color: #003B6D!important;
+    background-color: #6699CC!important;
+}
+
+.w3-dimgray, .w3-hover-dimgray:hover {
+    color: ;
+    background-color: #676767!important;
+}
+
+.w3-silver, .w3-hover-silver:hover {
+    color: ;
+    background-color: ;
+}

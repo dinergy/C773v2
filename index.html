@@ -11,11 +11,47 @@
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="styles/local.css" />
         <script src="https://kit.fontawesome.com/ab55dd123c.js" crossorigin="anonymous"></script>
-        <script src="scripts/local.js"></script>
+        <script>
+            function openMenu(evt, menuName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("menu");
+                for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-midnight", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.className += " w3-midnight";
+            }
+        </script> 
     </head>
-    <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
+    <body class="w3-margin">
+        <header class="w3-container">
+            <div class="w3-row w3-display-container" style="height: 75px">
+                <div class="w3-third w3-display-bottomleft"><a href="index.html"><img src="images/ppp_logo.png" alt="Logo" height="61.5px" width="143.5px" /></a></div>
+                <div class="w3-rest w3-display-bottomright"><i class="fa-solid fa-magnifying-glass"></i><input type="search" placeholder="Search..." />&nbsp;<input type="button" value="Fetch" /></div>
+            </div>
+        </header>
+        <menu class="w3-container">
+            <div class="w3-bar" style="background-color: #6699CC;">
+                <button class="w3-bar-item w3-button tablink w3-midnight" onclick="openMenu(event,'HOME')"><i class="fa-solid fa-house"></i>HOME</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openMenu(event,'CATS')"><i class="fa-solid fa-cat"></i>CATS</button>
+                <button class="w3-bar-item w3-button tablink"onclick="openMenu(event,'DOGS')"><i class="fa-solid fa-dog"></i>DOGS</button>
+                <button class="w3-bar-item w3-button tablink"onclick="openMenu(event,'FISH')"><i class="fa-solid fa-fish"></i>FISH</button>
+                <button class="w3-bar-item w3-button tablink w3-right" onclick="openMenu(event,'CONTACT')"><i class="fa-solid fa-clipboard-list"></i>CONTACT</button>
+            </div>
+        </menu>
+        <main class="w3-container">
+            <div id="HOME" class="w3-container menu">home</div>
+            <div id="CATS" class="w3-container menu" style="display:none">cats</div>
+            <div id="DOGS" class="w3-container menu" style="display:none">dogs</div>
+            <div id="FISH" class="w3-container menu" style="display:none">fish</div>
+            <div id="CONTACT" class="w3-container menu" style="display:none">contact</div>
+        </main>
+        <footer class="w3-container">
+
+        </footer>
     </body>
 </html>
