@@ -1,5 +1,5 @@
 ## C773v2 ##
-Version 2 of WGU C773 Site\
+Version 2 of WGU C773 Site
 
 ## Student Info ##
 USER INTERFACE DESIGN - C773\
