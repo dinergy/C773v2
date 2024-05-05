@@ -44,14 +44,74 @@
             </div>
         </menu>
         <main class="w3-container">
-            <div id="HOME" class="w3-container menu">home</div>
-            <div id="CATS" class="w3-container menu" style="display:none">cats</div>
-            <div id="DOGS" class="w3-container menu" style="display:none">dogs</div>
-            <div id="FISH" class="w3-container menu" style="display:none">fish</div>
-            <div id="CONTACT" class="w3-container menu" style="display:none">contact</div>
-        </main>
-        <footer class="w3-container">
+            <div id="HOME" class="w3-container menu">
+                <div class="w3-container">
+                    <h1 class="w3-text-midnight">Paradigm Pet Professionals</h1>
+                    <h5>EVIDENCE-BASED PET CARE ADVICE FOR EVERY PET LOVER</h5>
+                    <p>Pets are nature's gift to humanity. It has been scientifically proven that opening our homes and hearts to a pet increases our longevity and improves our overall quality of life as well as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to help you care for your furry, scaly, feathery, and slimy loved ones.</p>
+                    <p>Our pet experts—or <span class="w3-text-bluesky"><i class="fa-solid fa-paw fa-lg"></i>PEXPERTS</span>—have been working with pet owners and professionals alike for the past twelve years. They offer one-on-one consultations with current and prospective pet owners as well as group presentations designed for veterinary, pet shelter, and pet breeding professionals.</p>
+                </div>
+                <div class="w3-container">
+                    <h1 class="w3-text-midnight">Request A Consultation</h1>
+                    <p>Looking for basic pet care advice for the most common type of pets? Need additional help determining which type of pet is right for you and your family? We will work with you and provide tailored evidence-based pet care to ensure lifelong health and wellness of your new companion.</p>
+                    <p>Book a consultation with one of our <span class="w3-text-bluesky"><i class="fa-solid fa-paw fa-lg"></i>PEXPERTS</span> now!</p>
+                    <button class="w3-button w3-xlarge tablink" onclick="openMenu(event,'CONTACT')"><i class="fa-solid fa-clipboard-list"></i>REQUEST A CONSULTATION</button>
+                </div>
+                <div class="w3-container w3-row">
+                    <h1 class="w3-text-midnight">Pick Your Companion!</h1>
+                    <div class="w3-third">
+                        <button class="w3-button w3-xlarge tablink" onclick="openMenu(event,'CATS')"><img src="images/cat_1.jpg" alt="Cat" height="300px" width="auto" /><br /><span class="w3-left"><i class="fa-solid fa-cat"></i>CATS</span></button>
+                    </div>
+                    <div class="w3-third">
+                        <button class="w3-button w3-xlarge tablink"onclick="openMenu(event,'DOGS')"><img src="images/dog_1.jpg" alt="Dog" height="300px" width="auto" /><br /><span class="w3-left"><i class="fa-solid fa-dog"></i>DOGS</span></button>
+                    </div>
+                    <div class="w3-third">
+                        <button class="w3-button w3-xlarge tablink"onclick="openMenu(event,'FISH')"><img src="images/fish_1.jpg" alt="Fish" height="300px" width="auto" /><br /><span class="w3-left"><i class="fa-solid fa-fish"></i>FISH</span></button>
+                    </div>
+                </div>
+                <div class="w3-container w3-row">
+                    <h1 class="w3-text-midnight">Adoption Support</h1>
+                    <h4>Looking for your new best friend?</h4>
+                    <p>The following organizations can help you find and adopt the perfect companion.</p>
+                    <ul>
+                        <li><a href="https://theshelterpetproject.org/"><i class="fa-solid fa-up-right-from-square"></i>General Adoption Resources<i class="fa-solid fa-paw fa-lg"></i></a></li>
+                        <li><a href="https://www.aspca.org/"><i class="fa-solid fa-up-right-from-square"></i>ASPCA<i class="fa-solid fa-paw fa-lg"></i></a></li>
+                        <li><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/"><i class="fa-solid fa-up-right-from-square"></i>Fish Rescue<i class="fa-solid fa-fish-fins fa-lg"></i></a></li>
+                        <li><a href="https://savethesnakes.org/snakerescuecall/"><i class="fa-solid fa-up-right-from-square"></i>Snake Rescue<i class="fa-solid fa-snake fa-lg"></i></a></li>
+                        <li><a href="https://ftlob.rescuegroups.org/"><i class="fa-solid fa-up-right-from-square"></i>Bird Rescue<i class="fa-solid fa-bird fa-lg"></i></a></li>
+                    </ul>
+                    <p>We are also happy to help you navigate the adoption process! We will guide you through each step in the process from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, to bringing your new loved one home. Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.</p>
+                </div>
+            </div>
+            <!-- Main Tab Content Section START -->
+            <div id="CATS" class="w3-container menu" style="display:none">
+                <div class="w3-container w3-row">
+                    <h1 class="w3-center"><i class="fa-solid fa-cat"></i>Cats</h1>
 
+                </div>
+            </div>
+            <div id="DOGS" class="w3-container menu" style="display:none">
+                <div class="w3-container w3-row">
+                    <h1 class="w3-center"><i class="fa-solid fa-dog"></i>Dogs</h1>
+                </div>
+            </div>
+            <div id="FISH" class="w3-container menu" style="display:none">
+                <div class="w3-container w3-row">
+                    <h1 class="w3-center"><i class="fa-solid fa-fish"></i>Fish</h1>
+                </div>
+            </div>
+            <div id="CONTACT" class="w3-container menu" style="display:none">
+                <div class="w3-container w3-row">
+                    <h1 class="w3-center"><i class="fa-solid fa-clipboard-list"></i>Contact</h1>
+                </div>
+            </div>
+        </main>
+        <!-- Main Tab Content Section END -->
+        <footer class="w3-container">
+            <div class="w3-container w3-row">
+                <div class="w3-col w3-half w3-left">address info</div>
+                <div class="w3-col w3-half w3-right">site map</div>
+            </div>
         </footer>
     </body>
 </html>
